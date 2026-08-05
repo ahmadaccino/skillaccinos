@@ -1,6 +1,6 @@
-# skillaccino-skills
+# skillaccinos
 
-[![skills.sh](https://skills.sh/b/ahmadaccino/skillaccino-skills)](https://skills.sh/ahmadaccino/skillaccino-skills)
+[![skills.sh](https://skills.sh/b/ahmadaccino/skillaccinos)](https://skills.sh/ahmadaccino/skillaccinos)
 
 The agent skills and system prompt I actually use every day: adversarial code review, PR babysitting, review-comment writing, and review-comment triage — plus the global pi system prompt that keeps all of it terse and honest.
 
@@ -20,7 +20,7 @@ The agent skills and system prompt I actually use every day: adversarial code re
 Install it as your pi global prompt:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/ahmadaccino/skillaccino-skills/main/prompt/SYSTEM.md \
+curl -fsSL https://raw.githubusercontent.com/ahmadaccino/skillaccinos/main/prompt/SYSTEM.md \
   -o ~/.pi/agent/SYSTEM.md
 ```
 
@@ -31,13 +31,13 @@ It is plain Markdown, so it drops into other agents (Claude Code, Codex, Cursor)
 All skills:
 
 ```bash
-npx skills add ahmadaccino/skillaccino-skills
+npx skills add ahmadaccino/skillaccinos
 ```
 
 One skill:
 
 ```bash
-npx skills add ahmadaccino/skillaccino-skills --skill pi-review
+npx skills add ahmadaccino/skillaccinos --skill pi-review
 ```
 
 Or copy a skill directory into your user skills directory manually:
