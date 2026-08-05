@@ -1,0 +1,16 @@
+{
+  "$schema": "https://skills.sh/schemas/skills.sh.schema.json",
+  "notGrouped": "bottom",
+  "groupings": [
+    {
+      "title": "Code review",
+      "description": "Adversarial review of a diff, and writing the comments that come out of it.",
+      "skills": ["pi-review", "create-pr-comment"]
+    },
+    {
+      "title": "Pull requests",
+      "description": "Keeping an open PR moving until it merges.",
+      "skills": ["babysit-pr", "address-pr-comments"]
+    }
+  ]
+}
