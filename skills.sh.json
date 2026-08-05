@@ -11,6 +11,11 @@
       "title": "Pull requests",
       "description": "Keeping an open PR moving until it merges.",
       "skills": ["babysit-pr", "address-pr-comments"]
+    },
+    {
+      "title": "Language standards",
+      "description": "The quality bar per language, sharing one language-agnostic core.",
+      "skills": ["typescript-review", "rust-review"]
     }
   ]
 }

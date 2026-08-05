@@ -2,7 +2,7 @@
 
 [![skills.sh](https://skills.sh/b/ahmadaccino/skillaccinos)](https://skills.sh/ahmadaccino/skillaccinos)
 
-The agent skills and system prompt I actually use every day: adversarial code review, PR babysitting, review-comment writing, and review-comment triage — plus the global pi system prompt that keeps all of it terse and honest.
+The agent skills and system prompt I actually use every day: adversarial code review, language-specific quality bars, PR babysitting, review-comment writing, and review-comment triage — plus the global pi system prompt that keeps all of it terse and honest.
 
 ## Skills
 
@@ -12,6 +12,10 @@ The agent skills and system prompt I actually use every day: adversarial code re
 | [`babysit-pr`](skills/babysit-pr/SKILL.md) | Watches an open PR until it merges: polls CI, workflow runs, review comments, and mergeability; retries flakes; fixes and pushes what it safely can. |
 | [`create-pr-comment`](skills/create-pr-comment/SKILL.md) | Writes PR review comments and self-PR replies in my voice — short, blunt, lowercase, anchored to the line, never templated. |
 | [`address-pr-comments`](skills/address-pr-comments/SKILL.md) | Audits which review comments are resolved, fixes the rest, then replies to each thread and resolves it. |
+| [`typescript-review`](skills/typescript-review/SKILL.md) | The TS/React quality bar: single source of truth, derived state, no type escape hatches, deep modules, React 19 / TanStack / Tailwind conventions. |
+| [`rust-review`](skills/rust-review/SKILL.md) | The Rust quality bar: borrow over clone, `Result` over panic, unrepresentable bad states, async/Tokio discipline, clippy-clean verification. |
+
+`typescript-review` and `rust-review` share the same language-agnostic core (sections 1–8), so a mixed-language repo gets one consistent bar, then each diverges into what is genuinely language-specific.
 
 ## System prompt
 
@@ -52,6 +56,7 @@ Restart your agent if needed, then just ask for the work:
 review my changes before I open a PR
 babysit PR 412 until it merges
 address the comments on my PR
+refactor this module to our rust standards
 ```
 
 ## Requirements
