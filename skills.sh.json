@@ -16,6 +16,11 @@
       "title": "Language standards",
       "description": "The quality bar per language, sharing one language-agnostic core.",
       "skills": ["typescript-review", "rust-review"]
+    },
+    {
+      "title": "Design",
+      "description": "The de-slop design process and the design-graph/UI-grammar construction method for engineers building UI with AI agents.",
+      "skills": ["design-with-ai", "design-graph-ui-grammar"]
     }
   ]
 }

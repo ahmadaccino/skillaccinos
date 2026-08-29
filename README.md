@@ -14,6 +14,8 @@ The agent skills and system prompt I actually use every day: adversarial code re
 | [`address-pr-comments`](skills/address-pr-comments/SKILL.md) | Audits which review comments are resolved, fixes the rest, then replies to each thread and resolves it. |
 | [`typescript-review`](skills/typescript-review/SKILL.md) | The TS/React quality bar: single source of truth, derived state, no type escape hatches, deep modules, React 19 / TanStack / Tailwind conventions. |
 | [`rust-review`](skills/rust-review/SKILL.md) | The Rust quality bar: borrow over clone, `Result` over panic, unrepresentable bad states, async/Tokio discipline, clippy-clean verification. |
+| [`design-with-ai`](skills/design-with-ai/SKILL.md) | The de-slop design process for engineers who are not designers: constraints before pixels, no wackamole spot-fixes, remove agent litter, iterate 3–4 variants in a design tool, components + a `/showcase` page, preview deploys with real data, steal references, and thresh your taste. |
+| [`design-graph-ui-grammar`](skills/design-graph-ui-grammar/SKILL.md) | Build UI from a design graph (screen → components → every visually distinct state) and a UI grammar tree of named design-system primitives, then render a local state matrix before wiring the real screen. No raw-`div` screenshots, no states added later. |
 
 `typescript-review` and `rust-review` share the same language-agnostic core (sections 1–8), so a mixed-language repo gets one consistent bar, then each diverges into what is genuinely language-specific.
 
