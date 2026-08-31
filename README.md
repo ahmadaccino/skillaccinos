@@ -2,7 +2,7 @@
 
 [![skills.sh](https://skills.sh/b/ahmadaccino/skillaccinos)](https://skills.sh/ahmadaccino/skillaccinos)
 
-The agent skills and system prompt I actually use every day: adversarial code review, language-specific quality bars, PR babysitting, review-comment writing, and review-comment triage — plus the global pi system prompt that keeps all of it terse and honest.
+The agent skills and system prompt I actually use every day: adversarial code review, language-specific quality bars, PR babysitting, review-comment writing, review-comment triage, and pixel-perfect site recreation — plus the global pi system prompt that keeps all of it terse and honest.
 
 ## Skills
 
@@ -16,8 +16,15 @@ The agent skills and system prompt I actually use every day: adversarial code re
 | [`rust-review`](skills/rust-review/SKILL.md) | The Rust quality bar: borrow over clone, `Result` over panic, unrepresentable bad states, async/Tokio discipline, clippy-clean verification. |
 | [`design-with-ai`](skills/design-with-ai/SKILL.md) | The de-slop design process for engineers who are not designers: constraints before pixels, no wackamole spot-fixes, remove agent litter, iterate 3–4 variants in a design tool, components + a `/showcase` page, preview deploys with real data, steal references, and thresh your taste. |
 | [`design-graph-ui-grammar`](skills/design-graph-ui-grammar/SKILL.md) | Build UI from a design graph (screen → components → every visually distinct state) and a UI grammar tree of named design-system primitives, then render a local state matrix before wiring the real screen. No raw-`div` screenshots, no states added later. |
+| [`apps-ui-cheatsheet`](skills/apps-ui-cheatsheet/SKILL.md) | The Apps design UI cheatsheet, Apple design style — exact tokens for settings, integrations, connected apps, stores, permissions, and sidebar dashboards: Inter-only type, strong status states (`#CAFACE` / `#15B042` badges, `#0077E6` switches), 40px data rows / 44px store rows, 32px-height 10px-radius buttons. Strong states make settings easier to scan. |
+| [`laws-of-ux`](skills/laws-of-ux/SKILL.md) | Jon Yablonski's 30 Laws of UX (lawsofux.com) translated into build directives and code-level audit checks: what to do while implementing (Build it) and what to flag when reviewing (Audit it), grouped by psychology, usability, influencing behavior, and Gestalt — with a priority-by-task table and a `file:line [LAW]` audit workflow. |
+| [`recreate-site`](skills/recreate-site/SKILL.md) | Pixel-perfect clone of a live URL: dump computed styles/boxes, steal fonts and motion from source CSS/JS, screenshot-diff at a matched viewport, rebuild, then fix numeric deltas — not vibes. |
 
 `typescript-review` and `rust-review` share the same language-agnostic core (sections 1–8), so a mixed-language repo gets one consistent bar, then each diverges into what is genuinely language-specific.
+
+`design-with-ai`, `design-graph-ui-grammar`, `apps-ui-cheatsheet`, and `laws-of-ux` are the design stack: the process, the construction method, the Apple-style tokens, and the evidence-based review bar.
+
+`recreate-site` is the clone pipeline: the live page is the spec; computed numbers and screenshot diffs are the acceptance test.
 
 ## System prompt
 
@@ -59,6 +66,7 @@ review my changes before I open a PR
 babysit PR 412 until it merges
 address the comments on my PR
 refactor this module to our rust standards
+recreate https://example.com pixel-perfect
 ```
 
 ## Requirements
