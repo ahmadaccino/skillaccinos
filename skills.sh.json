@@ -19,8 +19,8 @@
     },
     {
       "title": "Design",
-      "description": "The de-slop design process, the design-graph/UI-grammar construction method, the Apple-style apps UI cheatsheet, and the Laws of UX review bar for engineers building UI with AI agents.",
-      "skills": ["design-with-ai", "design-graph-ui-grammar", "apps-ui-cheatsheet", "laws-of-ux"]
+      "description": "The UI implementation and anti-slop review bar, the de-slop design process, the design-graph/UI-grammar construction method, the Apple-style apps UI cheatsheet, and the Laws of UX review bar for engineers building UI with AI agents.",
+      "skills": ["ui-design", "design-with-ai", "design-graph-ui-grammar", "apps-ui-cheatsheet", "laws-of-ux"]
     },
     {
       "title": "Recreation",
